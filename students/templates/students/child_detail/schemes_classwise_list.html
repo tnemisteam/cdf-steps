@@ -1,0 +1,803 @@
+{% extends "baseapp/master_base.html"|pjax:request %}
+{% load i18n %}
+{% load url from future %}
+{% load widget_tweaks %}
+{% load imagekit %}
+{% block content %}
+
+
+
+
+
+<h3>Class:{{ class_id }}</h3>
+<center><h3>Schemes</h3></center>
+
+{% if class_id == '1' %}
+
+<table class='table table-bordered table-striped2' border="2">
+<tr>
+  <th rowspan=3>slno</th>
+  <th rowspan=3>Name</th>
+  <th colspan=3>Books</th>
+  <th colspan=3>NoteBooks</th>
+  <th colspan=4>Uniform</th>
+  <th rowspan=2>Bag</th>
+  <th rowspan=2>Foot war</th>
+  <th rowspan=2>Crayon</th>
+  <th rowspan=2>Breed winner</th>
+</tr>
+  
+  <tr>
+  <th>Term1</th>
+  <th>Term2</th>
+  <th>Term3</th>
+  <th>Term1</th>
+  <th>Term2</th>
+  <th>Term3</th>
+  <th>Set1</th>
+  <th>Set2</th>
+  <th>Set3</th>
+  <th>Set4</th>
+
+  </tr>
+
+<tr>
+  
+<th><input type='checkbox'id="selectall1"/>All</th>
+<th><input type='checkbox'id="selectall2"/>All</th>
+<th><input type='checkbox'id="selectall3"/>All</th>
+<th><input type='checkbox'id="selectall4"/>All</th>
+<th><input type='checkbox'id="selectall5"/>All</th>
+<th><input type='checkbox'id="selectall6"/>All</th>
+<th><input type='checkbox'id="selectall7"/>All</th>
+<th><input type='checkbox'id="selectall8"/>All</th>
+<th><input type='checkbox'id="selectall9"/>All</th>
+<th><input type='checkbox'id="selectall10"/>All</th>
+<th><input type='checkbox'id="selectall11"/>All</th>
+<th><input type='checkbox'id="selectall12"/>All</th>
+<th><input type='checkbox'id="selectall13"/>All</th>
+<th><input type='checkbox'id="selectall14"/>All</th>
+</tr>
+
+       {% for i in classwise_detail %}
+		<tr>
+        <td>{{forloop.counter}}</td>
+        <td>{{ i.name }}</td>
+		<td><input type='checkbox'class="checkbox1"></td>
+		<td><input type='checkbox'class="checkbox2"></td>
+		<td><input type='checkbox'class="checkbox3"></td>
+		<td><input type='checkbox'class="checkbox4"></td>
+		<td><input type='checkbox'class="checkbox5"></td>
+		<td><input type='checkbox'class="checkbox6"></td>
+		<td><input type='checkbox'class="checkbox7"></td> 
+		<td><input type='checkbox'class="checkbox8"></td>
+		<td><input type='checkbox'class="checkbox9"></td>
+		<td><input type='checkbox'class="checkbox10"></td>
+		<td><input type='checkbox'class="checkbox11"></td>
+		<td><input type='checkbox'class="checkbox12"></td>
+		<td><input type='checkbox'class="checkbox13"></td>
+		<td><input type='checkbox'class="checkbox14"></td>
+		</tr>
+ 		{% endfor %}
+</table>
+{% endif %}
+
+{% if class_id == '2' %}
+
+<table class='table table-bordered table-striped2' border="2">
+<tr>
+  <th rowspan=3>slno</th>
+  <th rowspan=3>Name</th>
+  <th colspan=3>Books</th>
+  <th colspan=3>NoteBooks</th>
+  <th colspan=4>Uniform</th>
+  <th rowspan=2>Bag</th>
+  <th rowspan=2>Foot war</th>
+  <th rowspan=2>Crayon</th>
+  <th rowspan=2>Breed winner</th>
+</tr>
+  
+  <tr>
+  <th>Term1</th>
+  <th>Term2</th>
+  <th>Term3</th>
+  <th>Term1</th>
+  <th>Term2</th>
+  <th>Term3</th>
+  <th>Set1</th>
+  <th>Set2</th>
+  <th>Set3</th>
+  <th>Set4</th>
+
+  </tr>
+
+<tr>
+  
+<th><input type='checkbox'id="selectall1"/>All</th>
+<th><input type='checkbox'id="selectall2"/>All</th>
+<th><input type='checkbox'id="selectall3"/>All</th>
+<th><input type='checkbox'id="selectall4"/>All</th>
+<th><input type='checkbox'id="selectall5"/>All</th>
+<th><input type='checkbox'id="selectall6"/>All</th>
+<th><input type='checkbox'id="selectall7"/>All</th>
+<th><input type='checkbox'id="selectall8"/>All</th>
+<th><input type='checkbox'id="selectall9"/>All</th>
+<th><input type='checkbox'id="selectall10"/>All</th>
+<th><input type='checkbox'id="selectall11"/>All</th>
+<th><input type='checkbox'id="selectall12"/>All</th>
+<th><input type='checkbox'id="selectall13"/>All</th>
+<th><input type='checkbox'id="selectall14"/>All</th>
+</tr>
+
+       {% for i in classwise_detail %}
+		<tr>
+        <td>{{forloop.counter}}</td>
+        <td>{{ i.name }}</td>
+		<td><input type='checkbox'class="checkbox1"></td>
+		<td><input type='checkbox'class="checkbox2"></td>
+		<td><input type='checkbox'class="checkbox3"></td>
+		<td><input type='checkbox'class="checkbox4"></td>
+		<td><input type='checkbox'class="checkbox5"></td>
+		<td><input type='checkbox'class="checkbox6"></td>
+		<td><input type='checkbox'class="checkbox7"></td> 
+		<td><input type='checkbox'class="checkbox8"></td>
+		<td><input type='checkbox'class="checkbox9"></td>
+		<td><input type='checkbox'class="checkbox10"></td>
+		<td><input type='checkbox'class="checkbox11"></td>
+		<td><input type='checkbox'class="checkbox12"></td>
+		<td><input type='checkbox'class="checkbox13"></td>
+		<td><input type='checkbox'class="checkbox14"></td>
+		</tr>
+ 		{% endfor %}
+</table>
+{% endif %}
+
+{% if class_id == '3' %}
+
+<table class='table table-bordered table-striped2' border="2">
+<tr>
+  <th rowspan=3>slno</th>
+  <th rowspan=3>Name</th>
+  <th colspan=3>Books</th>
+  <th colspan=3>NoteBooks</th>
+  <th colspan=4>Uniform</th>
+  <th rowspan=2>Bag</th>
+  <th rowspan=2>Foot war</th>
+  <th rowspan=2>Color Pencil</th>
+  <th rowspan=2>Breed winner</th>
+</tr>
+  
+  <tr>
+  <th>Term1</th>
+  <th>Term2</th>
+  <th>Term3</th>
+  <th>Term1</th>
+  <th>Term2</th>
+  <th>Term3</th>
+  <th>Set1</th>
+  <th>Set2</th>
+  <th>Set3</th>
+  <th>Set4</th>
+
+  </tr>
+
+<tr>
+  
+<th><input type='checkbox'id="selectall1"/>All</th>
+<th><input type='checkbox'id="selectall2"/>All</th>
+<th><input type='checkbox'id="selectall3"/>All</th>
+<th><input type='checkbox'id="selectall4"/>All</th>
+<th><input type='checkbox'id="selectall5"/>All</th>
+<th><input type='checkbox'id="selectall6"/>All</th>
+<th><input type='checkbox'id="selectall7"/>All</th>
+<th><input type='checkbox'id="selectall8"/>All</th>
+<th><input type='checkbox'id="selectall9"/>All</th>
+<th><input type='checkbox'id="selectall10"/>All</th>
+<th><input type='checkbox'id="selectall11"/>All</th>
+<th><input type='checkbox'id="selectall12"/>All</th>
+<th><input type='checkbox'id="selectall13"/>All</th>
+<th><input type='checkbox'id="selectall14"/>All</th>
+</tr>
+
+       {% for i in classwise_detail %}
+		<tr>
+        <td>{{forloop.counter}}</td>
+        <td>{{ i.name }}</td>
+		<td><input type='checkbox'class="checkbox1"></td>
+		<td><input type='checkbox'class="checkbox2"></td>
+		<td><input type='checkbox'class="checkbox3"></td>
+		<td><input type='checkbox'class="checkbox4"></td>
+		<td><input type='checkbox'class="checkbox5"></td>
+		<td><input type='checkbox'class="checkbox6"></td>
+		<td><input type='checkbox'class="checkbox7"></td> 
+		<td><input type='checkbox'class="checkbox8"></td>
+		<td><input type='checkbox'class="checkbox9"></td>
+		<td><input type='checkbox'class="checkbox10"></td>
+		<td><input type='checkbox'class="checkbox11"></td>
+		<td><input type='checkbox'class="checkbox12"></td>
+		<td><input type='checkbox'class="checkbox13"></td>
+		<td><input type='checkbox'class="checkbox14"></td>
+		</tr>
+ 		{% endfor %}
+</table>
+{% endif %}
+
+{% if class_id == '4' %}
+
+<table class='table table-bordered table-striped2' border="2">
+<tr>
+  <th rowspan=3>slno</th>
+  <th rowspan=3>Name</th>
+  <th colspan=3>Books</th>
+  <th colspan=3>NoteBooks</th>
+  <th colspan=4>Uniform</th>
+  <th rowspan=2>Bag</th>
+  <th rowspan=2>Foot war</th>
+  <th rowspan=2>Color Pencil</th>
+  <th rowspan=2>Breed winner</th>
+</tr>
+  
+  <tr>
+  <th>Term1</th>
+  <th>Term2</th>
+  <th>Term3</th>
+  <th>Term1</th>
+  <th>Term2</th>
+  <th>Term3</th>
+  <th>Set1</th>
+  <th>Set2</th>
+  <th>Set3</th>
+  <th>Set4</th>
+
+  </tr>
+
+<tr>
+  
+<th><input type='checkbox'id="selectall1"/>All</th>
+<th><input type='checkbox'id="selectall2"/>All</th>
+<th><input type='checkbox'id="selectall3"/>All</th>
+<th><input type='checkbox'id="selectall4"/>All</th>
+<th><input type='checkbox'id="selectall5"/>All</th>
+<th><input type='checkbox'id="selectall6"/>All</th>
+<th><input type='checkbox'id="selectall7"/>All</th>
+<th><input type='checkbox'id="selectall8"/>All</th>
+<th><input type='checkbox'id="selectall9"/>All</th>
+<th><input type='checkbox'id="selectall10"/>All</th>
+<th><input type='checkbox'id="selectall11"/>All</th>
+<th><input type='checkbox'id="selectall12"/>All</th>
+<th><input type='checkbox'id="selectall13"/>All</th>
+<th><input type='checkbox'id="selectall14"/>All</th>
+</tr>
+
+       {% for i in classwise_detail %}
+		<tr>
+        <td>{{forloop.counter}}</td>
+        <td>{{ i.name }}</td>
+		<td><input type='checkbox'class="checkbox1"></td>
+		<td><input type='checkbox'class="checkbox2"></td>
+		<td><input type='checkbox'class="checkbox3"></td>
+		<td><input type='checkbox'class="checkbox4"></td>
+		<td><input type='checkbox'class="checkbox5"></td>
+		<td><input type='checkbox'class="checkbox6"></td>
+		<td><input type='checkbox'class="checkbox7"></td> 
+		<td><input type='checkbox'class="checkbox8"></td>
+		<td><input type='checkbox'class="checkbox9"></td>
+		<td><input type='checkbox'class="checkbox10"></td>
+		<td><input type='checkbox'class="checkbox11"></td>
+		<td><input type='checkbox'class="checkbox12"></td>
+		<td><input type='checkbox'class="checkbox13"></td>
+		<td><input type='checkbox'class="checkbox14"></td>
+		</tr>
+ 		{% endfor %}
+</table>
+{% endif %}
+
+{% if class_id == '5' %}
+
+<table class='table table-bordered table-striped2' border="2">
+<tr>
+  <th rowspan=3>slno</th>
+  <th rowspan=3>Name</th>
+  <th colspan=3>Books</th>
+  <th colspan=3>NoteBooks</th>
+  <th colspan=4>Uniform</th>
+  <th rowspan=2>Bag</th>
+  <th rowspan=2>Foot war</th>
+  <th rowspan=2>Color Pencil</th>
+  <th rowspan=2>Breed winner</th>
+</tr>
+  
+  <tr>
+  <th>Term1</th>
+  <th>Term2</th>
+  <th>Term3</th>
+  <th>Term1</th>
+  <th>Term2</th>
+  <th>Term3</th>
+  <th>Set1</th>
+  <th>Set2</th>
+  <th>Set3</th>
+  <th>Set4</th>
+
+  </tr>
+
+<tr>
+  
+<th><input type='checkbox'id="selectall1"/>All</th>
+<th><input type='checkbox'id="selectall2"/>All</th>
+<th><input type='checkbox'id="selectall3"/>All</th>
+<th><input type='checkbox'id="selectall4"/>All</th>
+<th><input type='checkbox'id="selectall5"/>All</th>
+<th><input type='checkbox'id="selectall6"/>All</th>
+<th><input type='checkbox'id="selectall7"/>All</th>
+<th><input type='checkbox'id="selectall8"/>All</th>
+<th><input type='checkbox'id="selectall9"/>All</th>
+<th><input type='checkbox'id="selectall10"/>All</th>
+<th><input type='checkbox'id="selectall11"/>All</th>
+<th><input type='checkbox'id="selectall12"/>All</th>
+<th><input type='checkbox'id="selectall13"/>All</th>
+<th><input type='checkbox'id="selectall14"/>All</th>
+</tr>
+
+       {% for i in classwise_detail %}
+		<tr>
+        <td>{{forloop.counter}}</td>
+        <td>{{ i.name }}</td>
+		<td><input type='checkbox'class="checkbox1"></td>
+		<td><input type='checkbox'class="checkbox2"></td>
+		<td><input type='checkbox'class="checkbox3"></td>
+		<td><input type='checkbox'class="checkbox4"></td>
+		<td><input type='checkbox'class="checkbox5"></td>
+		<td><input type='checkbox'class="checkbox6"></td>
+		<td><input type='checkbox'class="checkbox7"></td> 
+		<td><input type='checkbox'class="checkbox8"></td>
+		<td><input type='checkbox'class="checkbox9"></td>
+		<td><input type='checkbox'class="checkbox10"></td>
+		<td><input type='checkbox'class="checkbox11"></td>
+		<td><input type='checkbox'class="checkbox12"></td>
+		<td><input type='checkbox'class="checkbox13"></td>
+		<td><input type='checkbox'class="checkbox14"></td>
+		</tr>
+ 		{% endfor %}
+</table>
+{% endif %}
+
+{% if class_id == '6' %}
+
+<table class='table table-bordered table-striped2' border="2">
+<tr>
+  <th rowspan=3>slno</th>
+  <th rowspan=3>Name</th>
+  <th colspan=3>Books</th>
+  <th colspan=3>NoteBooks</th>
+  <th colspan=4>Uniform</th>
+  <th rowspan=2>Bag</th>
+  <th rowspan=2>Foot war</th>
+  <th rowspan=2>J.Box</th>
+  <th rowspan=2>Atlas</th>
+  <th rowspan=2>Breed winner</th>
+</tr>
+  
+  <tr>
+  <th>Term1</th>
+  <th>Term2</th>
+  <th>Term3</th>
+  <th>Term1</th>
+  <th>Term2</th>
+  <th>Term3</th>
+  <th>Set1</th>
+  <th>Set2</th>
+  <th>Set3</th>
+  <th>Set4</th>
+
+  </tr>
+
+<tr>
+  
+<th><input type='checkbox'id="selectall1"/>All</th>
+<th><input type='checkbox'id="selectall2"/>All</th>
+<th><input type='checkbox'id="selectall3"/>All</th>
+<th><input type='checkbox'id="selectall4"/>All</th>
+<th><input type='checkbox'id="selectall5"/>All</th>
+<th><input type='checkbox'id="selectall6"/>All</th>
+<th><input type='checkbox'id="selectall7"/>All</th>
+<th><input type='checkbox'id="selectall8"/>All</th>
+<th><input type='checkbox'id="selectall9"/>All</th>
+<th><input type='checkbox'id="selectall10"/>All</th>
+<th><input type='checkbox'id="selectall11"/>All</th>
+<th><input type='checkbox'id="selectall12"/>All</th>
+<th><input type='checkbox'id="selectall13"/>All</th>
+<th><input type='checkbox'id="selectall14"/>All</th>
+<th><input type='checkbox'id="selectall15"/>All</th>
+<th><input type='checkbox'id="selectall16"/>All</th>
+</tr>
+
+       {% for i in classwise_detail %}
+		<tr>
+        <td>{{forloop.counter}}</td>
+        <td>{{ i.name }}</td>
+		<td><input type='checkbox'class="checkbox1"></td>
+		<td><input type='checkbox'class="checkbox2"></td>
+		<td><input type='checkbox'class="checkbox3"></td>
+		<td><input type='checkbox'class="checkbox4"></td>
+		<td><input type='checkbox'class="checkbox5"></td>
+		<td><input type='checkbox'class="checkbox6"></td>
+		<td><input type='checkbox'class="checkbox7"></td> 
+		<td><input type='checkbox'class="checkbox8"></td>
+		<td><input type='checkbox'class="checkbox9"></td>
+		<td><input type='checkbox'class="checkbox10"></td>
+		<td><input type='checkbox'class="checkbox11"></td>
+		<td><input type='checkbox'class="checkbox12"></td>
+		<td><input type='checkbox'class="checkbox13"></td>
+		<td><input type='checkbox'class="checkbox14"></td>
+		<td><input type='checkbox'class="checkbox15"></td>
+		<td><input type='checkbox'class="checkbox16"></td>
+		</tr>
+ 		{% endfor %}
+</table>
+{% endif %}
+
+{% if class_id == '7' %}
+
+<table class='table table-bordered table-striped2' border="2">
+<tr>
+  <th rowspan=3>slno</th>
+  <th rowspan=3>Name</th>
+  <th colspan=3>Books</th>
+  <th colspan=3>NoteBooks</th>
+  <th colspan=4>Uniform</th>
+  <th rowspan=2>Bag</th>
+  <th rowspan=2>Foot war</th>
+  <th rowspan=2>J.Box</th>
+  <th rowspan=2>Atlas</th>
+  <th rowspan=2>Breed winner</th>
+</tr>
+  
+  <tr>
+  <th>Term1</th>
+  <th>Term2</th>
+  <th>Term3</th>
+  <th>Term1</th>
+  <th>Term2</th>
+  <th>Term3</th>
+  <th>Set1</th>
+  <th>Set2</th>
+  <th>Set3</th>
+  <th>Set4</th>
+
+  </tr>
+
+<tr>
+  
+<th><input type='checkbox'id="selectall1"/>All</th>
+<th><input type='checkbox'id="selectall2"/>All</th>
+<th><input type='checkbox'id="selectall3"/>All</th>
+<th><input type='checkbox'id="selectall4"/>All</th>
+<th><input type='checkbox'id="selectall5"/>All</th>
+<th><input type='checkbox'id="selectall6"/>All</th>
+<th><input type='checkbox'id="selectall7"/>All</th>
+<th><input type='checkbox'id="selectall8"/>All</th>
+<th><input type='checkbox'id="selectall9"/>All</th>
+<th><input type='checkbox'id="selectall10"/>All</th>
+<th><input type='checkbox'id="selectall11"/>All</th>
+<th><input type='checkbox'id="selectall12"/>All</th>
+<th><input type='checkbox'id="selectall13"/>All</th>
+<th><input type='checkbox'id="selectall14"/>All</th>
+<th><input type='checkbox'id="selectall15"/>All</th>
+<th><input type='checkbox'id="selectall16"/>All</th>
+</tr>
+
+       {% for i in classwise_detail %}
+		<tr>
+        <td>{{forloop.counter}}</td>
+        <td>{{ i.name }}</td>
+		<td><input type='checkbox'class="checkbox1"></td>
+		<td><input type='checkbox'class="checkbox2"></td>
+		<td><input type='checkbox'class="checkbox3"></td>
+		<td><input type='checkbox'class="checkbox4"></td>
+		<td><input type='checkbox'class="checkbox5"></td>
+		<td><input type='checkbox'class="checkbox6"></td>
+		<td><input type='checkbox'class="checkbox7"></td> 
+		<td><input type='checkbox'class="checkbox8"></td>
+		<td><input type='checkbox'class="checkbox9"></td>
+		<td><input type='checkbox'class="checkbox10"></td>
+		<td><input type='checkbox'class="checkbox11"></td>
+		<td><input type='checkbox'class="checkbox12"></td>
+		<td><input type='checkbox'class="checkbox13"></td>
+		<td><input type='checkbox'class="checkbox14"></td>
+		<td><input type='checkbox'class="checkbox15"></td>
+		<td><input type='checkbox'class="checkbox16"></td>
+		</tr>
+ 		{% endfor %}
+</table>
+{% endif %}
+
+{% if class_id == '8' %}
+
+<table class='table table-bordered table-striped2' border="2">
+<tr>
+  <th rowspan=3>slno</th>
+  <th rowspan=3>Name</th>
+  <th colspan=3>Books</th>
+  <th colspan=3>NoteBooks</th>
+  <th colspan=4>Uniform</th>
+  <th rowspan=2>Bag</th>
+  <th rowspan=2>Foot war</th>
+  <th rowspan=2>J.Box</th>
+  <th rowspan=2>Atlas</th>
+  <th rowspan=2>Breed winner</th>
+</tr>
+  
+  <tr>
+  <th>Term1</th>
+  <th>Term2</th>
+  <th>Term3</th>
+  <th>Term1</th>
+  <th>Term2</th>
+  <th>Term3</th>
+  <th>Set1</th>
+  <th>Set2</th>
+  <th>Set3</th>
+  <th>Set4</th>
+
+  </tr>
+
+<tr>
+  
+<th><input type='checkbox'id="selectall1"/>All</th>
+<th><input type='checkbox'id="selectall2"/>All</th>
+<th><input type='checkbox'id="selectall3"/>All</th>
+<th><input type='checkbox'id="selectall4"/>All</th>
+<th><input type='checkbox'id="selectall5"/>All</th>
+<th><input type='checkbox'id="selectall6"/>All</th>
+<th><input type='checkbox'id="selectall7"/>All</th>
+<th><input type='checkbox'id="selectall8"/>All</th>
+<th><input type='checkbox'id="selectall9"/>All</th>
+<th><input type='checkbox'id="selectall10"/>All</th>
+<th><input type='checkbox'id="selectall11"/>All</th>
+<th><input type='checkbox'id="selectall12"/>All</th>
+<th><input type='checkbox'id="selectall13"/>All</th>
+<th><input type='checkbox'id="selectall14"/>All</th>
+<th><input type='checkbox'id="selectall15"/>All</th>
+<th><input type='checkbox'id="selectall16"/>All</th>
+</tr>
+
+       {% for i in classwise_detail %}
+		<tr>
+        <td>{{forloop.counter}}</td>
+        <td>{{ i.name }}</td>
+		<td><input type='checkbox'class="checkbox1"></td>
+		<td><input type='checkbox'class="checkbox2"></td>
+		<td><input type='checkbox'class="checkbox3"></td>
+		<td><input type='checkbox'class="checkbox4"></td>
+		<td><input type='checkbox'class="checkbox5"></td>
+		<td><input type='checkbox'class="checkbox6"></td>
+		<td><input type='checkbox'class="checkbox7"></td> 
+		<td><input type='checkbox'class="checkbox8"></td>
+		<td><input type='checkbox'class="checkbox9"></td>
+		<td><input type='checkbox'class="checkbox10"></td>
+		<td><input type='checkbox'class="checkbox11"></td>
+		<td><input type='checkbox'class="checkbox12"></td>
+		<td><input type='checkbox'class="checkbox13"></td>
+		<td><input type='checkbox'class="checkbox14"></td>
+		<td><input type='checkbox'class="checkbox15"></td>
+		<td><input type='checkbox'class="checkbox16"></td>
+		</tr>
+ 		{% endfor %}
+</table>
+{% endif %}
+
+{% if class_id == '9' %}
+
+<table class='table table-bordered table-striped2' border="2">
+<tr>
+  <th rowspan=3>slno</th>
+  <th rowspan=3>Name</th>
+  <th colspan=3>Books</th>
+  <th colspan=3>NoteBooks</th>
+  <th rowspan=2>Bag</th>
+  <th rowspan=2>Foot war</th>
+  <th rowspan=2>Crayon</th>
+  <th rowspan=2>Breed winner</th>
+  <th rowspan=2>J.Box</th>
+  <th rowspan=2>Atlas</th>
+</tr>
+  
+  <tr>
+  <th>Term1</th>
+  <th>Term2</th>
+  <th>Term3</th>
+  <th>Term1</th>
+  <th>Term2</th>
+  <th>Term3</th>
+  
+
+  </tr>
+
+<tr>
+  
+<th><input type='checkbox'id="selectall1"/>All</th>
+<th><input type='checkbox'id="selectall2"/>All</th>
+<th><input type='checkbox'id="selectall3"/>All</th>
+<th><input type='checkbox'id="selectall4"/>All</th>
+<th><input type='checkbox'id="selectall5"/>All</th>
+<th><input type='checkbox'id="selectall6"/>All</th>
+<th><input type='checkbox'id="selectall7"/>All</th>
+<th><input type='checkbox'id="selectall8"/>All</th>
+<th><input type='checkbox'id="selectall9"/>All</th>
+<th><input type='checkbox'id="selectall10"/>All</th>
+<th><input type='checkbox'id="selectall11"/>All</th>
+<th><input type='checkbox'id="selectall12"/>All</th>
+</tr>
+
+       {% for i in classwise_detail %}
+		<tr>
+        <td>{{forloop.counter}}</td>
+        <td>{{ i.name }}</td>
+		<td><input type='checkbox'class="checkbox1"></td>
+		<td><input type='checkbox'class="checkbox2"></td>
+		<td><input type='checkbox'class="checkbox3"></td>
+		<td><input type='checkbox'class="checkbox4"></td>
+		<td><input type='checkbox'class="checkbox5"></td>
+		<td><input type='checkbox'class="checkbox6"></td>
+		<td><input type='checkbox'class="checkbox7"></td> 
+		<td><input type='checkbox'class="checkbox8"></td>
+		<td><input type='checkbox'class="checkbox9"></td>
+		<td><input type='checkbox'class="checkbox10"></td>
+		<td><input type='checkbox'class="checkbox11"></td>
+		<td><input type='checkbox'class="checkbox12"></td>
+		</tr>
+ 		{% endfor %}
+</table>
+{% endif %}
+
+{% if class_id == '10' %}
+
+<table class='table table-bordered table-striped2' border="2">
+<tr>
+  <th rowspan=3>slno</th>
+  <th rowspan=3>Name</th>
+  <th colspan=3>Books</th>
+  <th colspan=3>NoteBooks</th>
+  <th rowspan=2>Bag</th>
+  <th rowspan=2>Foot war</th>
+  <th rowspan=2>Crayon</th>
+  <th rowspan=2>Breed winner</th>
+  <th rowspan=2>J.Box</th>
+  <th rowspan=2>Atlas</th>
+  <th rowspan=2>SCI</th>
+</tr>
+  
+  <tr>
+  <th>Term1</th>
+  <th>Term2</th>
+  <th>Term3</th>
+  <th>Term1</th>
+  <th>Term2</th>
+  <th>Term3</th>
+  
+
+  </tr>
+
+<tr>
+  
+<th><input type='checkbox'id="selectall1"/>All</th>
+<th><input type='checkbox'id="selectall2"/>All</th>
+<th><input type='checkbox'id="selectall3"/>All</th>
+<th><input type='checkbox'id="selectall4"/>All</th>
+<th><input type='checkbox'id="selectall5"/>All</th>
+<th><input type='checkbox'id="selectall6"/>All</th>
+<th><input type='checkbox'id="selectall7"/>All</th>
+<th><input type='checkbox'id="selectall8"/>All</th>
+<th><input type='checkbox'id="selectall9"/>All</th>
+<th><input type='checkbox'id="selectall10"/>All</th>
+<th><input type='checkbox'id="selectall11"/>All</th>
+<th><input type='checkbox'id="selectall12"/>All</th>
+<th><input type='checkbox'id="selectall13"/>All</th>
+</tr>
+
+       {% for i in classwise_detail %}
+		<tr>
+        <td>{{forloop.counter}}</td>
+        <td>{{ i.name }}</td>
+		<td><input type='checkbox'class="checkbox1"></td>
+		<td><input type='checkbox'class="checkbox2"></td>
+		<td><input type='checkbox'class="checkbox3"></td>
+		<td><input type='checkbox'class="checkbox4"></td>
+		<td><input type='checkbox'class="checkbox5"></td>
+		<td><input type='checkbox'class="checkbox6"></td>
+		<td><input type='checkbox'class="checkbox7"></td> 
+		<td><input type='checkbox'class="checkbox8"></td>
+		<td><input type='checkbox'class="checkbox9"></td>
+		<td><input type='checkbox'class="checkbox10"></td>
+		<td><input type='checkbox'class="checkbox11"></td>
+		<td><input type='checkbox'class="checkbox12"></td>
+		<td><input type='checkbox'class="checkbox13"></td>
+		</tr>
+ 		{% endfor %}
+</table>{% endif %}
+
+{% if class_id == '11' %}
+
+<table class='table table-bordered table-striped2' border="2">
+<tr>
+  <th rowspan=3>slno</th>
+  <th rowspan=3>Name</th>
+  <th rowspan=2>Books</th>
+  <th rowspan=2>Bag</th>
+  <th rowspan=2>cycle</th>
+  <th rowspan=2>Special Cash Incentive</th>
+  <th rowspan=2>Breed winner</th>
+</tr>
+  
+  <tr>
+  
+  </tr>
+
+<tr>
+  
+<th><input type='checkbox'id="selectall1"/>All</th>
+<th><input type='checkbox'id="selectall2"/>All</th>
+<th><input type='checkbox'id="selectall3"/>All</th>
+<th><input type='checkbox'id="selectall4"/>All</th>
+<th><input type='checkbox'id="selectall5"/>All</th>
+</tr>
+
+       {% for i in classwise_detail %}
+		<tr>
+        <td>{{forloop.counter}}</td>
+        <td>{{ i.name }}</td>
+		<td><input type='checkbox'class="checkbox1"></td>
+		<td><input type='checkbox'class="checkbox2"></td>
+		<td><input type='checkbox'class="checkbox3"></td>
+		<td><input type='checkbox'class="checkbox4"></td>
+		<td><input type='checkbox'class="checkbox5"></td>
+		</tr>
+ 		{% endfor %}
+</table>
+{% endif %}
+
+
+{% if class_id == '12' %}
+
+<table class='table table-bordered table-striped2' border="2">
+<tr>
+  <th rowspan=3>slno</th>
+  <th rowspan=3>Name</th>
+  <th rowspan=2>Books</th>
+  <th rowspan=2>Bag</th>
+  <th rowspan=2>Laptop</th>
+  <th rowspan=2>Special Cash Incentive</th>
+  <th rowspan=2>Breed winner</th>
+</tr>
+  
+  <tr>
+  
+  </tr>
+
+<tr>
+  
+<th><input type='checkbox'id="selectall1"/>All</th>
+<th><input type='checkbox'id="selectall2"/>All</th>
+<th><input type='checkbox'id="selectall3"/>All</th>
+<th><input type='checkbox'id="selectall4"/>All</th>
+<th><input type='checkbox'id="selectall5"/>All</th>
+</tr>
+
+       {% for i in classwise_detail %}
+		<tr>
+        <td>{{forloop.counter}}</td>
+        <td>{{ i.name }}</td>
+		<td><input type='checkbox'class="checkbox1"></td>
+		<td><input type='checkbox'class="checkbox2"></td>
+		<td><input type='checkbox'class="checkbox3"></td>
+		<td><input type='checkbox'class="checkbox4"></td>
+		<td><input type='checkbox'class="checkbox5"></td>
+		</tr>
+ 		{% endfor %}
+</table>
+{% endif %}
+
+
+
+{% endblock %}

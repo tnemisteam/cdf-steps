@@ -1,0 +1,56 @@
+{% extends 'students/child_detail/base.html' %}
+
+{% load i18n %}
+{% load url from future %}
+{% load widget_tweaks %}
+
+{% block content %}
+{% if form %}
+<div class="col">
+        <div class="col-md-8">
+  <form action='{% url "students_child_detail_pool_detail" %}' method='post' encoding='utf-8'>
+     <fieldset>
+      {% csrf_token %}
+
+      <div class="form-group"> <b>{% trans "District" %}</b>{{ form.district|add_class:"form-control" }}</div>
+      <div class="form-group"> <b>{% trans "Block" %}</b>{{ form.block|add_class:"form-control" }}</div>
+      <div class="form-group"> <b>{% trans "School" %}</b>{{ form.school|add_class:"form-control" }}</div>
+      <div class="form-group"> <b>{% trans "Class Last Studied" %}</b>
+      <select name="class_last_studied" id="class_last_studied" class="form-control">
+        <option value="" >---------</option>
+        <option value="1">I</option>
+        <option value="2">II</option>
+        <option value="3">III</option>
+        <option value="4">IV</option>
+        <option value="5">V</option>
+        <option value="6">VI</option>
+        <option value="7">VII</option>
+        <option value="8">VIII</option>
+        <option value="9">IX</option>
+        <option value="10">X</option>
+        <option value="11">XI</option>
+        <option value="12">XII</option>
+      </select></div>
+        <button class='btn btn-large btn-success' type='submit'>
+            {% trans "Submit" %}
+        </button>
+      </div>
+    </fieldset>
+  </form>
+</div>
+</div>
+{% else %}
+<table class='table table-bordered table-striped1' border="2" align="center">
+  <th>Student Name</th>
+  <th>Unique id no</th>
+{% for i  in student_list %}
+<tr>
+<td>{{i.name}} </td>
+<td>{{i.unique_id_no}} &nbsp;&nbsp;&nbsp;  
+  <a href='{% url "students_child_detail_detail" pk=i.id %}'>View</a>
+&nbsp;&nbsp;&nbsp;  </td>
+</tr>
+{% endfor %}
+</table>
+{% endif %}
+{% endblock %}

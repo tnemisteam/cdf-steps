@@ -1,0 +1,742 @@
+[3364] 20 Aug 09:46:45.458 # Warning: no config file specified, using the default config. In order to specify a config file use ../../Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[3364] 20 Aug 09:46:45.459 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[3364] 20 Aug 09:46:45.459 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[3364] 20 Aug 09:46:45.459 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+[3364] 20 Aug 09:46:45.463 # Warning: 32 bit instance detected but no memory limit set. Setting 3 GB maxmemory limit with 'noeviction' policy now.
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 2.8.13 (00000000/0) 32 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in stand alone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 3364
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+[3364] 20 Aug 09:46:45.465 # Server started, Redis version 2.8.13
+[3364] 20 Aug 09:46:45.465 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[3364] 20 Aug 09:46:45.465 * The server is now ready to accept connections on port 6379
+[3364] 20 Aug 10:46:46.115 * 1 changes in 3600 seconds. Saving...
+[3364] 20 Aug 10:46:46.158 * Background saving started by pid 4948
+[4948] 20 Aug 10:46:46.203 * DB saved on disk
+[4948] 20 Aug 10:46:46.204 * RDB: 6 MB of memory used by copy-on-write
+[3364] 20 Aug 10:46:46.259 * Background saving terminated with success
+[3364] 20 Aug 11:46:47.104 * 1 changes in 3600 seconds. Saving...
+[3364] 20 Aug 11:46:47.120 * Background saving started by pid 5900
+[5900] 20 Aug 11:46:47.151 * DB saved on disk
+[5900] 20 Aug 11:46:47.152 * RDB: 2 MB of memory used by copy-on-write
+[3364] 20 Aug 11:46:47.220 * Background saving terminated with success
+[3364] 20 Aug 12:46:48.068 * 1 changes in 3600 seconds. Saving...
+[3364] 20 Aug 12:46:48.106 * Background saving started by pid 6530
+[6530] 20 Aug 12:46:48.164 * DB saved on disk
+[6530] 20 Aug 12:46:48.165 * RDB: 2 MB of memory used by copy-on-write
+[3364] 20 Aug 12:46:48.206 * Background saving terminated with success
+[3364 | signal handler] (1408535086) Received SIGTERM, scheduling shutdown...
+[3364] 20 Aug 17:14:46.543 # User requested shutdown...
+[3364] 20 Aug 17:14:46.627 * Saving the final RDB snapshot before exiting.
+[3364] 20 Aug 17:14:46.857 * DB saved on disk
+[3364] 20 Aug 17:14:46.857 # Redis is now ready to exit, bye bye...
+[3850] 29 Dec 10:15:58.753 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[3850] 29 Dec 10:15:58.754 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[3850] 29 Dec 10:15:58.754 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[3850] 29 Dec 10:15:58.754 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+[3850] 29 Dec 10:15:58.754 # Creating Server TCP listening socket *:6379: bind: Address already in use
+[3088] 22 Jan 10:21:20.344 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[3088] 22 Jan 10:21:20.354 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[3088] 22 Jan 10:21:20.354 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[3088] 22 Jan 10:21:20.354 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 2.8.17 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in stand alone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 3088
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+[3088] 22 Jan 10:21:20.354 # Server started, Redis version 2.8.17
+[3088] 22 Jan 10:21:20.354 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[3088] 22 Jan 10:21:20.355 * DB loaded from disk: 0.000 seconds
+[3088] 22 Jan 10:21:20.355 * The server is now ready to accept connections on port 6379
+[3184] 22 Jan 10:21:26.995 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[3184] 22 Jan 10:21:26.996 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[3184] 22 Jan 10:21:26.996 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[3184] 22 Jan 10:21:26.996 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+[3184] 22 Jan 10:21:26.996 # Creating Server TCP listening socket *:6379: bind: Address already in use
+[3491] 22 Jan 10:43:29.593 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[3491] 22 Jan 10:43:29.593 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[3491] 22 Jan 10:43:29.593 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[3491] 22 Jan 10:43:29.593 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+[3491] 22 Jan 10:43:29.593 # Creating Server TCP listening socket *:6379: bind: Address already in use
+[4133] 22 Jan 10:57:04.427 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[4133] 22 Jan 10:57:04.427 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[4133] 22 Jan 10:57:04.427 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[4133] 22 Jan 10:57:04.427 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+[4133] 22 Jan 10:57:04.427 # Creating Server TCP listening socket *:6379: bind: Address already in use
+[3088] 22 Jan 11:21:21.066 * 1 changes in 3600 seconds. Saving...
+[3088] 22 Jan 11:21:21.067 * Background saving started by pid 4789
+[4789] 22 Jan 11:21:21.109 * DB saved on disk
+[4789] 22 Jan 11:21:21.110 * RDB: 6 MB of memory used by copy-on-write
+[3088] 22 Jan 11:21:21.167 * Background saving terminated with success
+[3088] 22 Jan 12:21:22.026 * 1 changes in 3600 seconds. Saving...
+[3088] 22 Jan 12:21:22.028 * Background saving started by pid 5983
+[5983] 22 Jan 12:21:22.061 * DB saved on disk
+[5983] 22 Jan 12:21:22.062 * RDB: 6 MB of memory used by copy-on-write
+[3088] 22 Jan 12:21:22.129 * Background saving terminated with success
+[3088] 22 Jan 13:31:41.823 * 1 changes in 3600 seconds. Saving...
+[3088] 22 Jan 13:31:41.825 * Background saving started by pid 6952
+[6952] 22 Jan 13:31:41.915 * DB saved on disk
+[6952] 22 Jan 13:31:41.916 * RDB: 6 MB of memory used by copy-on-write
+[3088] 22 Jan 13:31:41.925 * Background saving terminated with success
+[32188] 27 Jan 11:26:33.579 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[32188] 27 Jan 11:26:33.588 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[32188] 27 Jan 11:26:33.588 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[32188] 27 Jan 11:26:33.588 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 2.8.17 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in stand alone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 32188
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+[32188] 27 Jan 11:26:33.589 # Server started, Redis version 2.8.17
+[32188] 27 Jan 11:26:33.589 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[32188] 27 Jan 11:26:33.589 * DB loaded from disk: 0.000 seconds
+[32188] 27 Jan 11:26:33.589 * The server is now ready to accept connections on port 6379
+[32277] 27 Jan 11:26:47.226 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[32277] 27 Jan 11:26:47.227 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[32277] 27 Jan 11:26:47.227 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[32277] 27 Jan 11:26:47.227 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+[32277] 27 Jan 11:26:47.227 # Creating Server TCP listening socket *:6379: bind: Address already in use
+[32608] 27 Jan 11:30:53.265 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[32608] 27 Jan 11:30:53.265 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[32608] 27 Jan 11:30:53.266 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[32608] 27 Jan 11:30:53.266 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+[32608] 27 Jan 11:30:53.266 # Creating Server TCP listening socket *:6379: bind: Address already in use
+[32188] 27 Jan 12:26:34.030 * 1 changes in 3600 seconds. Saving...
+[32188] 27 Jan 12:26:34.057 * Background saving started by pid 2137
+[2137] 27 Jan 12:26:34.126 * DB saved on disk
+[2137] 27 Jan 12:26:34.127 * RDB: 6 MB of memory used by copy-on-write
+[32188] 27 Jan 12:26:34.158 * Background saving terminated with success
+[32188] 27 Jan 13:26:35.097 * 1 changes in 3600 seconds. Saving...
+[32188] 27 Jan 13:26:35.097 * Background saving started by pid 3156
+[3156] 27 Jan 13:26:35.139 * DB saved on disk
+[3156] 27 Jan 13:26:35.140 * RDB: 2 MB of memory used by copy-on-write
+[32188] 27 Jan 13:26:35.197 * Background saving terminated with success
+[32188] 27 Jan 14:26:36.026 * 1 changes in 3600 seconds. Saving...
+[32188] 27 Jan 14:26:36.026 * Background saving started by pid 3737
+[3737] 27 Jan 14:26:36.065 * DB saved on disk
+[3737] 27 Jan 14:26:36.065 * RDB: 2 MB of memory used by copy-on-write
+[32188] 27 Jan 14:26:36.127 * Background saving terminated with success
+[32188] 27 Jan 15:26:37.100 * 1 changes in 3600 seconds. Saving...
+[32188] 27 Jan 15:26:37.100 * Background saving started by pid 4463
+[4463] 27 Jan 15:26:37.153 * DB saved on disk
+[4463] 27 Jan 15:26:37.153 * RDB: 2 MB of memory used by copy-on-write
+[32188] 27 Jan 15:26:37.200 * Background saving terminated with success
+[5283] 27 Jan 16:29:40.112 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[5283] 27 Jan 16:29:40.113 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[5283] 27 Jan 16:29:40.113 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[5283] 27 Jan 16:29:40.113 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+[5283] 27 Jan 16:29:40.113 # Creating Server TCP listening socket *:6379: bind: Address already in use
+[32188 | signal handler] (1422362199) Received SIGTERM scheduling shutdown...
+[32188] 27 Jan 18:06:39.319 # User requested shutdown...
+[32188] 27 Jan 18:06:39.320 * Saving the final RDB snapshot before exiting.
+[32188] 27 Jan 18:06:39.634 * DB saved on disk
+[32188] 27 Jan 18:06:39.634 # Redis is now ready to exit, bye bye...
+[3343] 28 Jan 09:35:04.341 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[3343] 28 Jan 09:35:04.341 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[3343] 28 Jan 09:35:04.342 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[3343] 28 Jan 09:35:04.342 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 2.8.17 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in stand alone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 3343
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+[3343] 28 Jan 09:35:04.348 # Server started, Redis version 2.8.17
+[3343] 28 Jan 09:35:04.348 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[3343] 28 Jan 09:35:04.348 * DB loaded from disk: 0.000 seconds
+[3343] 28 Jan 09:35:04.348 * The server is now ready to accept connections on port 6379
+[3443] 28 Jan 09:35:13.827 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[3443] 28 Jan 09:35:13.828 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[3443] 28 Jan 09:35:13.828 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[3443] 28 Jan 09:35:13.828 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+[3443] 28 Jan 09:35:13.828 # Creating Server TCP listening socket *:6379: bind: Address already in use
+[3507] 28 Jan 09:35:14.418 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[3507] 28 Jan 09:35:14.419 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[3507] 28 Jan 09:35:14.419 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[3507] 28 Jan 09:35:14.419 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+[3507] 28 Jan 09:35:14.419 # Creating Server TCP listening socket *:6379: bind: Address already in use
+[3631] 28 Jan 09:35:33.364 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[3631] 28 Jan 09:35:33.365 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[3631] 28 Jan 09:35:33.365 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[3631] 28 Jan 09:35:33.365 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+[3631] 28 Jan 09:35:33.365 # Creating Server TCP listening socket *:6379: bind: Address already in use
+[3343] 28 Jan 09:59:14.171 * 100 changes in 300 seconds. Saving...
+[3343] 28 Jan 09:59:14.186 * Background saving started by pid 4845
+[4845] 28 Jan 09:59:14.240 * DB saved on disk
+[4845] 28 Jan 09:59:14.241 * RDB: 6 MB of memory used by copy-on-write
+[3343] 28 Jan 09:59:14.287 * Background saving terminated with success
+[3343] 28 Jan 10:59:15.020 * 1 changes in 3600 seconds. Saving...
+[3343] 28 Jan 10:59:15.073 * Background saving started by pid 6242
+[6242] 28 Jan 10:59:15.152 * DB saved on disk
+[6242] 28 Jan 10:59:15.153 * RDB: 6 MB of memory used by copy-on-write
+[3343] 28 Jan 10:59:15.173 * Background saving terminated with success
+[5100] 10 Feb 11:19:17.055 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[5100] 10 Feb 11:19:17.063 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[5100] 10 Feb 11:19:17.063 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[5100] 10 Feb 11:19:17.063 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 2.8.17 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in stand alone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 5100
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+[5100] 10 Feb 11:19:17.063 # Server started, Redis version 2.8.17
+[5100] 10 Feb 11:19:17.064 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[5100] 10 Feb 11:19:17.064 * DB loaded from disk: 0.000 seconds
+[5100] 10 Feb 11:19:17.064 * The server is now ready to accept connections on port 6379
+[5198] 10 Feb 11:19:29.085 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[5198] 10 Feb 11:19:29.085 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[5198] 10 Feb 11:19:29.085 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[5198] 10 Feb 11:19:29.085 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+[5198] 10 Feb 11:19:29.086 # Creating Server TCP listening socket *:6379: bind: Address already in use
+[5307] 10 Feb 11:19:30.536 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[5307] 10 Feb 11:19:30.536 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[5307] 10 Feb 11:19:30.537 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[5307] 10 Feb 11:19:30.537 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+[5307] 10 Feb 11:19:30.537 # Creating Server TCP listening socket *:6379: bind: Address already in use
+[5721] 10 Feb 11:34:36.602 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[5721] 10 Feb 11:34:36.603 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[5721] 10 Feb 11:34:36.603 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[5721] 10 Feb 11:34:36.603 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+[5721] 10 Feb 11:34:36.603 # Creating Server TCP listening socket *:6379: bind: Address already in use
+[6180] 10 Feb 12:02:28.305 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[6180] 10 Feb 12:02:28.306 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[6180] 10 Feb 12:02:28.306 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[6180] 10 Feb 12:02:28.306 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+[6180] 10 Feb 12:02:28.306 # Creating Server TCP listening socket *:6379: bind: Address already in use
+[5100] 10 Feb 12:19:18.051 * 1 changes in 3600 seconds. Saving...
+[5100] 10 Feb 12:19:18.056 * Background saving started by pid 9754
+[9754] 10 Feb 12:19:18.109 * DB saved on disk
+[9754] 10 Feb 12:19:18.110 * RDB: 6 MB of memory used by copy-on-write
+[5100] 10 Feb 12:19:18.157 * Background saving terminated with success
+[5100] 10 Feb 14:21:58.156 * 1 changes in 3600 seconds. Saving...
+[5100] 10 Feb 14:21:58.174 * Background saving started by pid 11736
+[11736] 10 Feb 14:21:58.267 * DB saved on disk
+[11736] 10 Feb 14:21:58.268 * RDB: 6 MB of memory used by copy-on-write
+[5100] 10 Feb 14:21:58.275 * Background saving terminated with success
+[5100] 10 Feb 15:21:59.069 * 1 changes in 3600 seconds. Saving...
+[5100] 10 Feb 15:21:59.077 * Background saving started by pid 13851
+[13851] 10 Feb 15:21:59.130 * DB saved on disk
+[13851] 10 Feb 15:21:59.131 * RDB: 2 MB of memory used by copy-on-write
+[5100] 10 Feb 15:21:59.178 * Background saving terminated with success
+[5100 | signal handler] (1423564783) Received SIGTERM scheduling shutdown...
+[5100] 10 Feb 16:09:43.434 # User requested shutdown...
+[5100] 10 Feb 16:09:43.434 * Saving the final RDB snapshot before exiting.
+[5100] 10 Feb 16:09:43.634 * DB saved on disk
+[5100] 10 Feb 16:09:43.634 # Redis is now ready to exit, bye bye...
+[3284] 11 Feb 09:57:22.489 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[3284] 11 Feb 09:57:22.490 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[3284] 11 Feb 09:57:22.490 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[3284] 11 Feb 09:57:22.490 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 2.8.17 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in stand alone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 3284
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+[3284] 11 Feb 09:57:22.491 # Server started, Redis version 2.8.17
+[3284] 11 Feb 09:57:22.491 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[3284] 11 Feb 09:57:22.491 * DB loaded from disk: 0.000 seconds
+[3284] 11 Feb 09:57:22.491 * The server is now ready to accept connections on port 6379
+[3380] 11 Feb 09:57:28.095 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[3380] 11 Feb 09:57:28.095 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[3380] 11 Feb 09:57:28.095 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[3380] 11 Feb 09:57:28.095 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+[3380] 11 Feb 09:57:28.095 # Creating Server TCP listening socket *:6379: bind: Address already in use
+[3450] 11 Feb 09:57:29.328 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[3450] 11 Feb 09:57:29.329 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[3450] 11 Feb 09:57:29.329 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[3450] 11 Feb 09:57:29.329 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+[3450] 11 Feb 09:57:29.329 # Creating Server TCP listening socket *:6379: bind: Address already in use
+[3610] 11 Feb 09:57:39.952 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[3610] 11 Feb 09:57:39.953 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[3610] 11 Feb 09:57:39.953 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[3610] 11 Feb 09:57:39.953 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+[3610] 11 Feb 09:57:39.953 # Creating Server TCP listening socket *:6379: bind: Address already in use
+[4258] 11 Feb 10:18:41.095 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[4258] 11 Feb 10:18:41.096 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[4258] 11 Feb 10:18:41.096 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[4258] 11 Feb 10:18:41.096 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+[4258] 11 Feb 10:18:41.096 # Creating Server TCP listening socket *:6379: bind: Address already in use
+[3284] 11 Feb 10:57:23.083 * 1 changes in 3600 seconds. Saving...
+[3284] 11 Feb 10:57:23.084 * Background saving started by pid 5161
+[5161] 11 Feb 10:57:23.128 * DB saved on disk
+[5161] 11 Feb 10:57:23.128 * RDB: 6 MB of memory used by copy-on-write
+[3284] 11 Feb 10:57:23.184 * Background saving terminated with success
+[3284] 11 Feb 11:57:24.067 * 1 changes in 3600 seconds. Saving...
+[3284] 11 Feb 11:57:24.069 * Background saving started by pid 6120
+[6120] 11 Feb 11:57:24.110 * DB saved on disk
+[6120] 11 Feb 11:57:24.111 * RDB: 6 MB of memory used by copy-on-write
+[3284] 11 Feb 11:57:24.170 * Background saving terminated with success
+[3284] 11 Feb 12:57:25.033 * 1 changes in 3600 seconds. Saving...
+[3284] 11 Feb 12:57:25.034 * Background saving started by pid 7039
+[7039] 11 Feb 12:57:25.090 * DB saved on disk
+[7039] 11 Feb 12:57:25.090 * RDB: 6 MB of memory used by copy-on-write
+[3284] 11 Feb 12:57:25.134 * Background saving terminated with success
+[3284] 11 Feb 13:57:26.001 * 1 changes in 3600 seconds. Saving...
+[3284] 11 Feb 13:57:26.019 * Background saving started by pid 7912
+[7912] 11 Feb 13:57:26.060 * DB saved on disk
+[7912] 11 Feb 13:57:26.060 * RDB: 6 MB of memory used by copy-on-write
+[3284] 11 Feb 13:57:26.119 * Background saving terminated with success
+[3284] 11 Feb 14:57:27.068 * 1 changes in 3600 seconds. Saving...
+[3284] 11 Feb 14:57:27.069 * Background saving started by pid 8750
+[8750] 11 Feb 14:57:27.117 * DB saved on disk
+[8750] 11 Feb 14:57:27.117 * RDB: 6 MB of memory used by copy-on-write
+[3284] 11 Feb 14:57:27.171 * Background saving terminated with success
+[3284] 11 Feb 15:57:28.056 * 1 changes in 3600 seconds. Saving...
+[3284] 11 Feb 15:57:28.077 * Background saving started by pid 9755
+[9755] 11 Feb 15:57:28.115 * DB saved on disk
+[9755] 11 Feb 15:57:28.115 * RDB: 6 MB of memory used by copy-on-write
+[3284] 11 Feb 15:57:28.177 * Background saving terminated with success
+[3284] 11 Feb 16:57:29.101 * 1 changes in 3600 seconds. Saving...
+[3284] 11 Feb 16:57:29.122 * Background saving started by pid 10909
+[10909] 11 Feb 16:57:29.161 * DB saved on disk
+[10909] 11 Feb 16:57:29.162 * RDB: 6 MB of memory used by copy-on-write
+[3284] 11 Feb 16:57:29.222 * Background saving terminated with success
+[3284 | signal handler] (1423656091) Received SIGTERM scheduling shutdown...
+[3284] 11 Feb 17:31:31.822 # User requested shutdown...
+[3284] 11 Feb 17:31:31.822 * Saving the final RDB snapshot before exiting.
+[3284] 11 Feb 17:31:32.079 * DB saved on disk
+[3284] 11 Feb 17:31:32.079 # Redis is now ready to exit, bye bye...
+[4640] 12 Feb 10:53:29.076 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[4640] 12 Feb 10:53:29.087 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[4640] 12 Feb 10:53:29.087 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[4640] 12 Feb 10:53:29.087 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 2.8.17 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in stand alone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 4640
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+[4640] 12 Feb 10:53:29.087 # Server started, Redis version 2.8.17
+[4640] 12 Feb 10:53:29.087 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[4640] 12 Feb 10:53:29.088 * DB loaded from disk: 0.000 seconds
+[4640] 12 Feb 10:53:29.088 * The server is now ready to accept connections on port 6379
+[4743] 12 Feb 10:53:42.975 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[4743] 12 Feb 10:53:42.976 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[4743] 12 Feb 10:53:42.976 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[4743] 12 Feb 10:53:42.976 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+[4743] 12 Feb 10:53:42.976 # Creating Server TCP listening socket *:6379: bind: Address already in use
+[4849] 12 Feb 10:53:44.879 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[4849] 12 Feb 10:53:44.880 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[4849] 12 Feb 10:53:44.880 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[4849] 12 Feb 10:53:44.880 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+[4849] 12 Feb 10:53:44.880 # Creating Server TCP listening socket *:6379: bind: Address already in use
+[4968] 12 Feb 10:53:49.424 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[4968] 12 Feb 10:53:49.425 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[4968] 12 Feb 10:53:49.425 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[4968] 12 Feb 10:53:49.425 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+[4968] 12 Feb 10:53:49.425 # Creating Server TCP listening socket *:6379: bind: Address already in use
+[4640] 12 Feb 11:53:30.012 * 1 changes in 3600 seconds. Saving...
+[4640] 12 Feb 11:53:30.013 * Background saving started by pid 6349
+[6349] 12 Feb 11:53:30.065 * DB saved on disk
+[6349] 12 Feb 11:53:30.066 * RDB: 6 MB of memory used by copy-on-write
+[4640] 12 Feb 11:53:30.113 * Background saving terminated with success
+[4640] 12 Feb 12:53:31.061 * 1 changes in 3600 seconds. Saving...
+[4640] 12 Feb 12:53:31.062 * Background saving started by pid 8446
+[8446] 12 Feb 12:53:31.133 * DB saved on disk
+[8446] 12 Feb 12:53:31.134 * RDB: 6 MB of memory used by copy-on-write
+[4640] 12 Feb 12:53:31.163 * Background saving terminated with success
+[4640] 12 Feb 14:00:01.461 * 1 changes in 3600 seconds. Saving...
+[4640] 12 Feb 14:00:01.483 * Background saving started by pid 9240
+[9240] 12 Feb 14:00:01.535 * DB saved on disk
+[9240] 12 Feb 14:00:01.535 * RDB: 6 MB of memory used by copy-on-write
+[4640] 12 Feb 14:00:01.583 * Background saving terminated with success
+[4640] 12 Feb 15:00:02.089 * 1 changes in 3600 seconds. Saving...
+[4640] 12 Feb 15:00:02.107 * Background saving started by pid 9972
+[9972] 12 Feb 15:00:02.147 * DB saved on disk
+[9972] 12 Feb 15:00:02.148 * RDB: 6 MB of memory used by copy-on-write
+[4640] 12 Feb 15:00:02.207 * Background saving terminated with success
+[4640] 12 Feb 16:28:57.887 * 1 changes in 3600 seconds. Saving...
+[4640] 12 Feb 16:28:57.888 * Background saving started by pid 11397
+[11397] 12 Feb 16:28:57.942 * DB saved on disk
+[11397] 12 Feb 16:28:57.942 * RDB: 6 MB of memory used by copy-on-write
+[4640] 12 Feb 16:28:57.988 * Background saving terminated with success
+[3832] 16 Feb 09:50:35.723 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[3832] 16 Feb 09:50:35.742 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[3832] 16 Feb 09:50:35.742 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[3832] 16 Feb 09:50:35.742 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 2.8.17 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in stand alone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 3832
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+[3832] 16 Feb 09:50:35.743 # Server started, Redis version 2.8.17
+[3832] 16 Feb 09:50:35.743 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[3832] 16 Feb 09:50:35.743 * DB loaded from disk: 0.000 seconds
+[3832] 16 Feb 09:50:35.743 * The server is now ready to accept connections on port 6379
+[3967] 16 Feb 09:51:04.652 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[3967] 16 Feb 09:51:04.652 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[3967] 16 Feb 09:51:04.652 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[3967] 16 Feb 09:51:04.652 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+[3967] 16 Feb 09:51:04.652 # Creating Server TCP listening socket *:6379: bind: Address already in use
+[4076] 16 Feb 09:51:17.214 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[4076] 16 Feb 09:51:17.215 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[4076] 16 Feb 09:51:17.215 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[4076] 16 Feb 09:51:17.215 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+[4076] 16 Feb 09:51:17.215 # Creating Server TCP listening socket *:6379: bind: Address already in use
+[4195] 16 Feb 09:51:21.154 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[4195] 16 Feb 09:51:21.155 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[4195] 16 Feb 09:51:21.155 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[4195] 16 Feb 09:51:21.155 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+[4195] 16 Feb 09:51:21.155 # Creating Server TCP listening socket *:6379: bind: Address already in use
+[4510] 16 Feb 09:58:52.102 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[4510] 16 Feb 09:58:52.103 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[4510] 16 Feb 09:58:52.103 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[4510] 16 Feb 09:58:52.103 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+[4510] 16 Feb 09:58:52.103 # Creating Server TCP listening socket *:6379: bind: Address already in use
+[3832] 16 Feb 10:50:36.081 * 1 changes in 3600 seconds. Saving...
+[3832] 16 Feb 10:50:36.093 * Background saving started by pid 5701
+[5701] 16 Feb 10:50:36.135 * DB saved on disk
+[5701] 16 Feb 10:50:36.136 * RDB: 6 MB of memory used by copy-on-write
+[3832] 16 Feb 10:50:36.193 * Background saving terminated with success
+[3832] 16 Feb 11:50:37.077 * 1 changes in 3600 seconds. Saving...
+[3832] 16 Feb 11:50:37.090 * Background saving started by pid 6867
+[6867] 16 Feb 11:50:37.147 * DB saved on disk
+[6867] 16 Feb 11:50:37.147 * RDB: 2 MB of memory used by copy-on-write
+[3832] 16 Feb 11:50:37.190 * Background saving terminated with success
+[3832] 16 Feb 12:50:38.005 * 1 changes in 3600 seconds. Saving...
+[3832] 16 Feb 12:50:38.006 * Background saving started by pid 8160
+[8160] 16 Feb 12:50:38.053 * DB saved on disk
+[8160] 16 Feb 12:50:38.054 * RDB: 2 MB of memory used by copy-on-write
+[3832] 16 Feb 12:50:38.106 * Background saving terminated with success
+[3832] 16 Feb 13:50:39.097 * 1 changes in 3600 seconds. Saving...
+[3832] 16 Feb 13:50:39.097 * Background saving started by pid 9348
+[9348] 16 Feb 13:50:39.147 * DB saved on disk
+[9348] 16 Feb 13:50:39.147 * RDB: 2 MB of memory used by copy-on-write
+[3832] 16 Feb 13:50:39.198 * Background saving terminated with success
+[3832] 16 Feb 14:50:40.041 * 1 changes in 3600 seconds. Saving...
+[3832] 16 Feb 14:50:40.054 * Background saving started by pid 10324
+[10324] 16 Feb 14:50:40.107 * DB saved on disk
+[10324] 16 Feb 14:50:40.108 * RDB: 2 MB of memory used by copy-on-write
+[3832] 16 Feb 14:50:40.155 * Background saving terminated with success
+[12295] 16 Feb 15:38:50.281 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[12295] 16 Feb 15:38:50.282 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[12295] 16 Feb 15:38:50.282 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[12295] 16 Feb 15:38:50.282 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+[12295] 16 Feb 15:38:50.282 # Creating Server TCP listening socket *:6379: bind: Address already in use
+[3832] 16 Feb 15:50:41.059 * 1 changes in 3600 seconds. Saving...
+[3832] 16 Feb 15:50:41.078 * Background saving started by pid 12653
+[12653] 16 Feb 15:50:41.112 * DB saved on disk
+[12653] 16 Feb 15:50:41.112 * RDB: 2 MB of memory used by copy-on-write
+[3832] 16 Feb 15:50:41.178 * Background saving terminated with success
+[3832] 16 Feb 16:50:42.004 * 1 changes in 3600 seconds. Saving...
+[3832] 16 Feb 16:50:42.004 * Background saving started by pid 14303
+[14303] 16 Feb 16:50:42.067 * DB saved on disk
+[14303] 16 Feb 16:50:42.067 * RDB: 2 MB of memory used by copy-on-write
+[3832] 16 Feb 16:50:42.104 * Background saving terminated with success
+[3832] 16 Feb 17:50:43.099 * 1 changes in 3600 seconds. Saving...
+[3832] 16 Feb 17:50:43.099 * Background saving started by pid 15305
+[15305] 16 Feb 17:50:43.159 * DB saved on disk
+[15305] 16 Feb 17:50:43.159 * RDB: 2 MB of memory used by copy-on-write
+[3832] 16 Feb 17:50:43.199 * Background saving terminated with success
+[16074] 16 Feb 18:28:06.672 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[16074] 16 Feb 18:28:06.673 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[16074] 16 Feb 18:28:06.673 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[16074] 16 Feb 18:28:06.673 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+[16074] 16 Feb 18:28:06.673 # Creating Server TCP listening socket *:6379: bind: Address already in use
+[16530] 16 Feb 18:31:44.415 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[16530] 16 Feb 18:31:44.416 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[16530] 16 Feb 18:31:44.416 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[16530] 16 Feb 18:31:44.416 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+[16530] 16 Feb 18:31:44.416 # Creating Server TCP listening socket *:6379: bind: Address already in use
+[3832] 16 Feb 18:50:44.075 * 1 changes in 3600 seconds. Saving...
+[3832] 16 Feb 18:50:44.075 * Background saving started by pid 17012
+[17012] 16 Feb 18:50:44.117 * DB saved on disk
+[17012] 16 Feb 18:50:44.118 * RDB: 2 MB of memory used by copy-on-write
+[3832] 16 Feb 18:50:44.175 * Background saving terminated with success
+[3832 | signal handler] (1424093377) Received SIGTERM scheduling shutdown...
+[3832] 16 Feb 18:59:37.541 # User requested shutdown...
+[3832] 16 Feb 18:59:37.541 * Saving the final RDB snapshot before exiting.
+[3832] 16 Feb 18:59:37.803 * DB saved on disk
+[3832] 16 Feb 18:59:37.803 # Redis is now ready to exit, bye bye...
+[3294] 18 Feb 09:46:14.852 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[3294] 18 Feb 09:46:14.853 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[3294] 18 Feb 09:46:14.853 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[3294] 18 Feb 09:46:14.853 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 2.8.17 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in stand alone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 3294
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+[3294] 18 Feb 09:46:14.853 # Server started, Redis version 2.8.17
+[3294] 18 Feb 09:46:14.853 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[3294] 18 Feb 09:46:14.854 * DB loaded from disk: 0.000 seconds
+[3294] 18 Feb 09:46:14.854 * The server is now ready to accept connections on port 6379
+[3391] 18 Feb 09:46:29.219 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[3391] 18 Feb 09:46:29.262 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[3391] 18 Feb 09:46:29.262 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[3391] 18 Feb 09:46:29.262 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+[3391] 18 Feb 09:46:29.263 # Creating Server TCP listening socket *:6379: bind: Address already in use
+[3499] 18 Feb 09:46:31.739 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[3499] 18 Feb 09:46:31.740 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[3499] 18 Feb 09:46:31.740 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[3499] 18 Feb 09:46:31.740 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+[3499] 18 Feb 09:46:31.741 # Creating Server TCP listening socket *:6379: bind: Address already in use
+[6137] 18 Feb 10:42:22.938 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[6137] 18 Feb 10:42:22.938 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[6137] 18 Feb 10:42:22.938 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[6137] 18 Feb 10:42:22.938 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+[6137] 18 Feb 10:42:22.938 # Creating Server TCP listening socket *:6379: bind: Address already in use
+[5579] 19 Feb 11:27:35.010 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[5579] 19 Feb 11:27:35.011 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[5579] 19 Feb 11:27:35.011 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[5579] 19 Feb 11:27:35.011 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+[5579] 19 Feb 11:27:35.011 # Creating Server TCP listening socket *:6379: bind: Address already in use
+[5704] 19 Feb 11:27:38.970 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[5704] 19 Feb 11:27:38.971 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[5704] 19 Feb 11:27:38.971 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[5704] 19 Feb 11:27:38.971 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+[5704] 19 Feb 11:27:38.971 # Creating Server TCP listening socket *:6379: bind: Address already in use
+[3518] 23 Feb 09:50:35.271 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[3518] 23 Feb 09:50:35.280 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[3518] 23 Feb 09:50:35.280 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[3518] 23 Feb 09:50:35.280 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 2.8.17 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in stand alone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 3518
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+[3518] 23 Feb 09:50:35.281 # Server started, Redis version 2.8.17
+[3518] 23 Feb 09:50:35.281 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[3518] 23 Feb 09:50:35.281 * DB loaded from disk: 0.000 seconds
+[3518] 23 Feb 09:50:35.281 * The server is now ready to accept connections on port 6379
+[3618] 23 Feb 09:50:45.320 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[3618] 23 Feb 09:50:45.321 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[3618] 23 Feb 09:50:45.321 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[3618] 23 Feb 09:50:45.321 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+[3618] 23 Feb 09:50:45.321 # Creating Server TCP listening socket *:6379: bind: Address already in use
+[3725] 23 Feb 09:50:53.241 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[3725] 23 Feb 09:50:53.242 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[3725] 23 Feb 09:50:53.242 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[3725] 23 Feb 09:50:53.242 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+[3725] 23 Feb 09:50:53.242 # Creating Server TCP listening socket *:6379: bind: Address already in use
+[3844] 23 Feb 09:50:57.321 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[3844] 23 Feb 09:50:57.321 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[3844] 23 Feb 09:50:57.321 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[3844] 23 Feb 09:50:57.321 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+[3844] 23 Feb 09:50:57.321 # Creating Server TCP listening socket *:6379: bind: Address already in use
+[5550] 23 Feb 10:30:40.770 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[5550] 23 Feb 10:30:40.795 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[5550] 23 Feb 10:30:40.795 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[5550] 23 Feb 10:30:40.795 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+[5550] 23 Feb 10:30:40.795 # Creating Server TCP listening socket *:6379: bind: Address already in use
+[3518] 23 Feb 10:50:36.006 * 1 changes in 3600 seconds. Saving...
+[3518] 23 Feb 10:50:36.023 * Background saving started by pid 6304
+[6304] 23 Feb 10:50:36.065 * DB saved on disk
+[6304] 23 Feb 10:50:36.065 * RDB: 6 MB of memory used by copy-on-write
+[3518] 23 Feb 10:50:36.124 * Background saving terminated with success
+[4693] 24 Feb 10:24:18.145 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[4693] 24 Feb 10:24:18.153 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[4693] 24 Feb 10:24:18.153 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[4693] 24 Feb 10:24:18.153 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 2.8.17 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in stand alone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 4693
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+[4693] 24 Feb 10:24:18.154 # Server started, Redis version 2.8.17
+[4693] 24 Feb 10:24:18.154 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[4693] 24 Feb 10:24:18.154 * DB loaded from disk: 0.000 seconds
+[4693] 24 Feb 10:24:18.154 * The server is now ready to accept connections on port 6379
+[5109] 24 Feb 10:32:48.152 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[5109] 24 Feb 10:32:48.153 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[5109] 24 Feb 10:32:48.153 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[5109] 24 Feb 10:32:48.153 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+[5109] 24 Feb 10:32:48.153 # Creating Server TCP listening socket *:6379: bind: Address already in use
+[5842] 24 Feb 11:04:01.134 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[5842] 24 Feb 11:04:01.142 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[5842] 24 Feb 11:04:01.142 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[5842] 24 Feb 11:04:01.142 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+[5842] 24 Feb 11:04:01.142 # Creating Server TCP listening socket *:6379: bind: Address already in use
+[6411] 24 Feb 11:17:00.782 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[6411] 24 Feb 11:17:00.783 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[6411] 24 Feb 11:17:00.783 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[6411] 24 Feb 11:17:00.783 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+[6411] 24 Feb 11:17:00.783 # Creating Server TCP listening socket *:6379: bind: Address already in use
+[4693] 24 Feb 11:24:19.076 * 1 changes in 3600 seconds. Saving...
+[4693] 24 Feb 11:24:19.092 * Background saving started by pid 6633
+[6633] 24 Feb 11:24:19.147 * DB saved on disk
+[6633] 24 Feb 11:24:19.148 * RDB: 6 MB of memory used by copy-on-write
+[4693] 24 Feb 11:24:19.192 * Background saving terminated with success
+[3332] 25 Feb 09:40:46.106 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[3332] 25 Feb 09:40:46.121 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[3332] 25 Feb 09:40:46.121 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[3332] 25 Feb 09:40:46.121 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 2.8.17 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in stand alone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 3332
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+[3332] 25 Feb 09:40:46.122 # Server started, Redis version 2.8.17
+[3332] 25 Feb 09:40:46.122 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[3332] 25 Feb 09:40:46.122 * DB loaded from disk: 0.000 seconds
+[3332] 25 Feb 09:40:46.122 * The server is now ready to accept connections on port 6379
+[3415] 25 Feb 09:40:55.564 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[3415] 25 Feb 09:40:55.564 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[3415] 25 Feb 09:40:55.564 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[3415] 25 Feb 09:40:55.564 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+[3415] 25 Feb 09:40:55.564 # Creating Server TCP listening socket *:6379: bind: Address already in use
+[3521] 25 Feb 09:40:57.272 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[3521] 25 Feb 09:40:57.272 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[3521] 25 Feb 09:40:57.272 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[3521] 25 Feb 09:40:57.273 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+[3521] 25 Feb 09:40:57.273 # Creating Server TCP listening socket *:6379: bind: Address already in use
+[3640] 25 Feb 09:41:01.154 # Warning: no config file specified, using the default config. In order to specify a config file use /home/nrcfoss/Downloads/redis-stable/src/redis-server /path/to/redis.conf
+[3640] 25 Feb 09:41:01.155 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+[3640] 25 Feb 09:41:01.155 # Redis can't set maximum open files to 10032 because of OS error: Operation not permitted.
+[3640] 25 Feb 09:41:01.155 # Current maximum open files is 1024. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+[3640] 25 Feb 09:41:01.155 # Creating Server TCP listening socket *:6379: bind: Address already in use
